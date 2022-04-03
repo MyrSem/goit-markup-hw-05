@@ -122,7 +122,7 @@ textarea {
 .current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   content: "";
   width: 100%;
 height: 4px;
@@ -283,16 +283,17 @@ border-radius: 2px;
 
 .our-work-title {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 70px;
     transform: translateY(-100%);
-    padding-top: 27px;
-    padding-bottom: 27px;
 
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
     background-color: rgba(47, 48, 58, 0.8);
@@ -380,7 +381,6 @@ border-radius: 2px;
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
     fill: var(--white-color);
-    background-color: var(--brand-color);
 }
 
 .social-link {
